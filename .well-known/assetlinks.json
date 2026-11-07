@@ -1,13 +1,14 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.kodijunction.app",
       "sha256_cert_fingerprints": [
         "5B:04:A7:4C:52:15:AD:96:C7:65:57:75:E0:31:9B:A3:49:9C:70:7C:6D:87:77:71:73:7C:69:1F:31:F4:B0:C9",
-        "62:99:83:7C:59:5C:43:94:72:FA:DE:8B:7B:9D:37:48:24:77:8F:F8:C3:BC:EB:04:12:94:EC:AE:1F:C2:FB:BF",
-        "48:D9:67:B0:20:29:FF:4F:B3:28:FF:90:7E:66:F1:FD:46:36:66:2A:3F:19:88:AB:AD:55:3B:54:2D:7E:04:CD"
+        "62:99:83:7C:59:5C:43:94:72:FA:DE:8B:7B:9D:37:48:24:77:8F:F8:C3:BC:EB:04:12:94:EC:AE:1F:C2:FB:BF"
       ]
     }
   }
