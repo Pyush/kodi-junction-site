@@ -4,6 +4,11 @@
 @font-face { font-family: "Baloo Bhai 2"; font-style: normal; font-weight: 500 800; font-display: swap;
   src: url(/assets/fonts/baloo-bhai-2-gujarati.woff2) format("woff2");
   unicode-range: U+0951-0952, U+0964-0965, U+0A80-0AFF, U+200C-200D, U+20B9, U+25CC, U+A830-A839; }
+/* The few Devanagari letters on every page (the language switch); the Hindi
+   pages declare a fuller face of their own, which takes precedence. */
+@font-face { font-family: "Baloo Bhai 2"; font-style: normal; font-weight: 500 800; font-display: swap;
+  src: url(/assets/fonts/baloo-2-devanagari-mini.woff2) format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF; }
 @font-face { font-family: "Baloo Bhai 2"; font-style: normal; font-weight: 500 800; font-display: swap;
   src: url(/assets/fonts/baloo-bhai-2-latin-ext.woff2) format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
@@ -60,10 +65,22 @@ a:hover { color: var(--gold); }
 .nav { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
 .nav a { color: var(--soft); text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 6px 10px; border-radius: 10px; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--gold-light); background: rgba(246, 199, 68, 0.1); }
+.header-end { display: flex; align-items: center; gap: 8px; }
+.lang-switch { display: flex; flex-shrink: 0; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+.lang-switch a { color: var(--soft); text-decoration: none; font-weight: 700; font-size: 0.85rem; line-height: 1.5; padding: 3px 9px; white-space: nowrap; }
+.lang-switch a + a { border-left: 1px solid var(--line); }
+.lang-switch a:hover { color: var(--gold-light); background: rgba(246, 199, 68, 0.1); }
+.lang-switch a[aria-current="true"] { background: var(--gold); color: var(--night); }
 @media (max-width: 640px) {
   .nav .optional { display: none; }
   .brand span { font-size: 1rem; }
 }
+@media (max-width: 480px) {
+  .brand span { display: none; }
+  .nav a { padding: 6px 8px; }
+}
+/* Letter spacing pulls apart the joined letters of Gujarati and Hindi. */
+:lang(gu) .eyebrow, :lang(hi) .eyebrow { letter-spacing: 0.02em; }
 
 /* Buttons */
 .btn {
