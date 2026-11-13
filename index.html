@@ -3,18 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kodi Junction – The Heritage Board Game of Gujarat</title>
-<meta name="description" content="Kodi Junction is the traditional cowrie-shell board game of Gujarat, like Chowka Bhara and Ashta Chamma. Play the computer, pass and play with family, or play online with 2 to 4 players. Free on Google Play.">
+<title>Kodi Junction – Gujarati Cowrie Board Game | Chowka Bhara</title>
+<meta name="description" content="Kodi Junction is the free Gujarati cowrie board game, like Chowka Bhara and Ashta Chamma. Play the computer, pass and play, or online with 2 to 4 players.">
 <link rel="canonical" href="https://kodijunction.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#14060f">
+<meta name="application-name" content="Kodi Junction">
+<meta name="google-play-app" content="app-id=com.kodijunction.app">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Kodi Junction">
+<meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://kodijunction.com/">
-<meta property="og:title" content="Kodi Junction – The Heritage Board Game of Gujarat">
-<meta property="og:description" content="Throw the cowries, race your gotis home. Play the computer, family on one phone, or friends online.">
+<meta property="og:title" content="Kodi Junction – The Gujarati Cowrie Board Game">
+<meta property="og:description" content="Throw the cowries, race your gotis home. Play the computer, family on one phone, or friends online. Free on Google Play.">
 <meta property="og:image" content="https://kodijunction.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Kodi Junction: cowrie shells and gotis on a festive Gujarati board">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kodi Junction – The Gujarati Cowrie Board Game">
+<meta name="twitter:description" content="Throw the cowries, race your gotis home. Play the computer, family on one phone, or friends online.">
+<meta name="twitter:image" content="https://kodijunction.com/assets/og-image.jpg">
+<link rel="preload" as="image" href="/assets/shots/02_match.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600;800&display=swap">
@@ -22,13 +35,66 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MobileApplication",
-  "name": "Kodi Junction",
-  "operatingSystem": "Android",
-  "applicationCategory": "GameApplication",
-  "url": "https://kodijunction.com/",
-  "installUrl": "https://play.google.com/store/apps/details?id=com.kodijunction.app",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kodijunction.com/#org",
+      "name": "Kodi Junction",
+      "url": "https://kodijunction.com/",
+      "logo": "https://kodijunction.com/assets/icon-192.png",
+      "email": "androidpyus@gmail.com",
+      "sameAs": ["https://play.google.com/store/apps/details?id=com.kodijunction.app"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kodijunction.com/#website",
+      "name": "Kodi Junction",
+      "alternateName": ["કોડી જંક્શન", "Kodi Junction game"],
+      "url": "https://kodijunction.com/",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://kodijunction.com/#org" }
+    },
+    {
+      "@type": ["MobileApplication", "VideoGame"],
+      "@id": "https://kodijunction.com/#app",
+      "name": "Kodi Junction",
+      "alternateName": ["Kodi Junction: Desi Board Game", "કોડી જંક્શન"],
+      "description": "The traditional cowrie-shell board game of Gujarat, in the same family as Chowka Bhara, Ashta Chamma and Chauka Bara. Throw four cowries, race four gotis around a 5×5 cross-and-square board, capture rivals and bring everyone home. Play the computer, pass and play with 2 to 4 players, or play online.",
+      "url": "https://kodijunction.com/",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.kodijunction.app",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.kodijunction.app",
+      "image": "https://kodijunction.com/assets/og-image.jpg",
+      "screenshot": [
+        "https://kodijunction.com/assets/shots/02_match.webp",
+        "https://kodijunction.com/assets/shots/03_capture.webp",
+        "https://kodijunction.com/assets/shots/05_collect.webp"
+      ],
+      "operatingSystem": "Android",
+      "applicationCategory": "GameApplication",
+      "applicationSubCategory": "Board game",
+      "genre": ["Board game", "Strategy", "Family"],
+      "gamePlatform": "Android",
+      "playMode": ["SinglePlayer", "MultiPlayer"],
+      "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 4 },
+      "inLanguage": ["en", "gu", "hi", "es", "fr", "de", "pt", "ar", "ja"],
+      "contentRating": "Everyone",
+      "isAccessibleForFree": true,
+      "publisher": { "@id": "https://kodijunction.com/#org" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "category": "free" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kodijunction.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is Kodi Junction?", "acceptedAnswer": { "@type": "Answer", "text": "Kodi Junction is a free Android game of the traditional Gujarati board game played with cowrie shells (kodi). Each player races four gotis around a 5×5 cross-and-square board, captures rival gotis and tries to bring all four to the center home first." } },
+        { "@type": "Question", "name": "Is it the same as Chowka Bhara or Ashta Chamma?", "acceptedAnswer": { "@type": "Answer", "text": "It is the same family of game. Chowka Bhara (Karnataka), Ashta Chamma (Andhra Pradesh and Telangana) and Chauka Bara are regional names for race-and-capture games played with cowries on a square board. Kodi Junction uses the Gujarati rules: a 5×5 board, throws of 1, 2, 3, 4 and 8, the Tohd capture rule and the Jodko pair." } },
+        { "@type": "Question", "name": "Can I play Kodi Junction offline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Matches against the computer and pass-and-play games with 2 to 4 players on one phone work with no internet and no account." } },
+        { "@type": "Question", "name": "How do I play online with friends?", "acceptedAnswer": { "@type": "Answer", "text": "Tap Play Online, create a private room and share the room code or invite link. Up to four players can join, and computer players fill any empty seats. You can also match with anyone online." } },
+        { "@type": "Question", "name": "Is Kodi Junction free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The game is free to download and play, with optional in-app purchases. The Pro Pass removes banner and between-match ads, and ads never appear during a match." } },
+        { "@type": "Question", "name": "Which languages does it support?", "acceptedAnswer": { "@type": "Answer", "text": "Nine: English, Gujarati, Hindi, Spanish, French, German, Portuguese, Arabic and Japanese." } }
+      ]
+    }
+  ]
 }
 </script>
 </head>
@@ -38,7 +104,8 @@
     <a class="brand" href="/"><img src="/assets/icon-192.png" alt="" width="38" height="38"><span>Kodi Junction</span></a>
     <nav class="nav" aria-label="Main">
       <a class="optional" href="#modes">Modes</a>
-      <a class="optional" href="#how">How to play</a>
+      <a href="/how-to-play.html">How to play</a>
+      <a class="optional" href="#faq">FAQ</a>
       <a href="/privacy.html">Privacy</a>
       <a href="/terms.html">Terms</a>
     </nav>
@@ -51,10 +118,10 @@
       <div>
         <div class="eyebrow">Free on Android</div>
         <div class="gujarati" lang="gu">કોડી જંક્શન</div>
-        <h1>The heritage board game of Gujarat</h1>
+        <h1>Kodi, the heritage cowrie board game of Gujarat</h1>
         <div class="lead">Throw four cowrie shells, race your gotis around the cross-and-square board, capture your rivals and bring everyone home. The game you played with your grandparents, now on your phone.</div>
         <div class="actions">
-          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.kodijunction.app">
+          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.kodijunction.app&amp;referrer=utm_source%3Dkodijunction.com%26utm_medium%3Dwebsite%26utm_campaign%3Dhero">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.6 2.3a1.4 1.4 0 0 0-.6 1.2v17a1.4 1.4 0 0 0 .6 1.2l9.6-9.7zm10.8 8.5 2.6-2.6L6.4 1.6l-.2-.1zm0 2.4-9.2 9.3.2-.1 11.6-6.6zm4.4-3.5-2.9-1.6-2.8 2.9 2.8 2.9 2.9-1.7c.8-.4.8-2 0-2.5z"/></svg>
             Get it on Google Play
           </a>
@@ -125,6 +192,7 @@
           <li><strong>Stay safe.</strong> Gotis on the X squares can't be captured.</li>
           <li><strong>Make a Jodko.</strong> Two of your gotis together can't be captured by a single goti.</li>
           <li><strong>Win.</strong> The first player to bring all four gotis home wins the game.</li>
+          <li class="more"><a href="/how-to-play.html">Read the full rules, strategy tips and regional names →</a></li>
         </ul>
       </div>
     </div>
@@ -145,12 +213,45 @@
     </div>
   </section>
 
+  <section id="faq">
+    <div class="wrap">
+      <h2 class="section-title">Questions players ask</h2>
+      <div class="section-sub">About the game, the rules and playing with family.</div>
+      <div class="faq">
+        <details open>
+          <summary>What is Kodi Junction?</summary>
+          <p>Kodi Junction is a free Android game of the traditional Gujarati board game played with cowrie shells (<em>kodi</em>). Each player races four gotis around a 5×5 cross-and-square board, captures rival gotis and tries to bring all four to the center home first.</p>
+        </details>
+        <details>
+          <summary>Is it the same as Chowka Bhara or Ashta Chamma?</summary>
+          <p>It is the same family of game. Chowka Bhara (Karnataka), Ashta Chamma (Andhra Pradesh and Telangana) and Chauka Bara are regional names for race-and-capture games played with cowries on a square board. Kodi Junction uses the Gujarati rules: a 5×5 board, throws of 1, 2, 3, 4 and 8, the Tohd capture rule and the Jodko pair. <a href="/how-to-play.html#names">More on the regional names</a>.</p>
+        </details>
+        <details>
+          <summary>Can I play Kodi Junction offline?</summary>
+          <p>Yes. Matches against the computer and pass-and-play games with 2 to 4 players on one phone work with no internet and no account.</p>
+        </details>
+        <details>
+          <summary>How do I play online with friends?</summary>
+          <p>Tap Play Online, create a private room and share the room code or invite link. Up to four players can join, and computer players fill any empty seats. You can also match with anyone online.</p>
+        </details>
+        <details>
+          <summary>Is Kodi Junction free?</summary>
+          <p>Yes. The game is free to download and play, with optional in-app purchases. The Pro Pass removes banner and between-match ads, and ads never appear during a match.</p>
+        </details>
+        <details>
+          <summary>Which languages does it support?</summary>
+          <p>Nine: English, Gujarati, Hindi, Spanish, French, German, Portuguese, Arabic and Japanese.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <section>
     <div class="wrap">
       <div class="cta">
         <h2>Throw the cowries tonight</h2>
         <div class="section-sub">Free to play, with optional in-app purchases. Ads never appear during a match.</div>
-        <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.kodijunction.app">
+        <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.kodijunction.app&amp;referrer=utm_source%3Dkodijunction.com%26utm_medium%3Dwebsite%26utm_campaign%3Dfooter_cta">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.6 2.3a1.4 1.4 0 0 0-.6 1.2v17a1.4 1.4 0 0 0 .6 1.2l9.6-9.7zm10.8 8.5 2.6-2.6L6.4 1.6l-.2-.1zm0 2.4-9.2 9.3.2-.1 11.6-6.6zm4.4-3.5-2.9-1.6-2.8 2.9 2.8 2.9 2.9-1.7c.8-.4.8-2 0-2.5z"/></svg>
           Get it on Google Play
         </a>
@@ -161,7 +262,8 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <nav class="footer-links" aria-label="Legal">
+    <nav class="footer-links" aria-label="Site">
+      <a href="/how-to-play.html">How to Play</a>
       <a href="/privacy.html">Privacy Policy</a>
       <a href="/terms.html">Terms of Service</a>
       <a href="mailto:androidpyus@gmail.com">Contact</a>

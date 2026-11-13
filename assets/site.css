@@ -141,6 +141,39 @@ section { padding: 48px 0; }
 .doc-switch a { text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; color: var(--soft); font-weight: 600; font-size: 0.95rem; }
 .doc-switch a[aria-current="page"] { background: var(--gold); color: var(--night); border-color: var(--gold); }
 
+/* Link under the home page rules */
+.rules li.more { padding-left: 14px; background: transparent; border-style: dashed; }
+.rules li.more::before { content: none; }
+
+/* FAQ */
+.faq { max-width: 780px; margin: 0 auto; display: grid; gap: 10px; }
+.faq details { background: linear-gradient(180deg, var(--panel-2), var(--panel)); border: 1px solid var(--line); border-radius: 14px; padding: 0 18px; }
+.faq summary { cursor: pointer; list-style: none; padding: 14px 28px 14px 0; font-weight: 700; color: var(--gold-light); position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 0; top: 10px; font-size: 1.4rem; color: var(--gold); }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { margin: 0 0 16px; color: var(--soft); }
+
+/* Rules guide */
+.crumbs { margin: 24px auto 0; max-width: 820px; font-size: 0.92rem; color: var(--soft); }
+.crumbs a { color: var(--soft); }
+.guide { max-width: 820px; margin: 12px auto 36px; background: linear-gradient(180deg, var(--panel-2), var(--panel)); border: 1px solid var(--line); border-radius: 22px; padding: 34px clamp(18px, 5vw, 44px); }
+.guide h1 { margin: 0 0 10px; font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.2; color: var(--gold); }
+.guide h2 { margin: 34px 0 8px; font-size: 1.35rem; color: var(--gold-light); padding-top: 16px; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
+.guide p, .guide li { color: var(--soft); }
+.guide strong { color: var(--text); }
+.guide .lead { font-size: 1.1rem; }
+.guide .cta h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+.toc { background: rgba(0, 0, 0, 0.2); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin: 18px 0 8px; }
+.toc strong { color: var(--gold-light); }
+.toc ol { margin: 8px 0 0; padding-left: 22px; columns: 2 240px; column-gap: 28px; }
+.toc li { margin: 2px 0; break-inside: avoid; }
+.table-wrap { overflow-x: auto; }
+.guide table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; font-size: 0.98rem; }
+.guide th, .guide td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+.guide th { color: var(--gold-light); }
+.guide td { color: var(--soft); }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .btn { transition: none; }

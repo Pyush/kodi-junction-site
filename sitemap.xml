@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://kodijunction.com/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image><image:loc>https://kodijunction.com/assets/og-image.jpg</image:loc></image:image>
+    <image:image><image:loc>https://kodijunction.com/assets/shots/02_match.webp</image:loc></image:image>
+    <image:image><image:loc>https://kodijunction.com/assets/shots/01_menu.webp</image:loc></image:image>
+    <image:image><image:loc>https://kodijunction.com/assets/shots/03_capture.webp</image:loc></image:image>
+    <image:image><image:loc>https://kodijunction.com/assets/shots/04_victory.webp</image:loc></image:image>
+    <image:image><image:loc>https://kodijunction.com/assets/shots/05_collect.webp</image:loc></image:image>
+    <image:image><image:loc>https://kodijunction.com/assets/shots/06_preview.webp</image:loc></image:image>
+    <image:image><image:loc>https://kodijunction.com/assets/shots/07_languages.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://kodijunction.com/how-to-play.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://kodijunction.com/privacy.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://kodijunction.com/terms.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+</urlset>

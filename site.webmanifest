@@ -1,0 +1,11 @@
+{
+  "name": "Kodi Junction",
+  "short_name": "Kodi Junction",
+  "description": "The Gujarati cowrie-shell board game.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#14060f",
+  "theme_color": "#14060f",
+  "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" }],
+  "related_applications": [{ "platform": "play", "url": "https://play.google.com/store/apps/details?id=com.kodijunction.app", "id": "com.kodijunction.app" }]
+}
